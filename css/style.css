@@ -375,6 +375,9 @@ footer ul{
         justify-content: none;
         padding: 10px 0;
     }
+    .titulo2{
+        visibility: hidden;
+    }
     .section-principal{
         text-align: center;
     }

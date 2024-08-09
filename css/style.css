@@ -96,7 +96,6 @@ button a{
 }
 .container-pag1{
     display: flex;
-    background-color: #d4cbcb;
     width: 100%;
     height: 43.75rem;
     flex-direction: row;
@@ -111,7 +110,6 @@ button a{
 }
 .container-products{
     display: flex;
-    background-color: #d4cbcb;
     width: 100%;
     height: 43.75rem;
     flex-direction: row;
@@ -185,7 +183,7 @@ footer ul{
     flex-direction: column;
     font-size: 1.25rem;
     width: 21.875rem;
-    height: 12.5rem;
+    height: 200px;
     border-radius: 0.3125rem;
     text-align: center;
     box-shadow: 5px 5px 10px black;
@@ -353,8 +351,16 @@ footer ul{
     position: relative;
     font-size: 1.5625rem;
 }
-
-@media (max-width:768px){
+@media (max-width:1200px){
+    .container-pag1{
+        height: auto;
+    }
+    .mapa{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width:815px){
     header{
         flex-direction: row;
         align-items: center;

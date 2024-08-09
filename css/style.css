@@ -218,7 +218,7 @@ footer ul{
 
 .curso-formulario{
     width: 70%;
-    height: 200px;
+    height: 12.5rem;
 }
 .container-pag1{
     display: flex;
@@ -361,8 +361,16 @@ footer ul{
         justify-content: none;
         padding: 10px 0;
     }
+    .section-principal{
+        text-align: center;
+    }
     .navbar{
         flex-direction: column;
+        gap: 0.0625rem;
+    }
+    .container-card{
+        width: 16rem;
+        height: 20rem;
     }
     .container-pag1 h1{
         font-size: 1.9rem;
@@ -389,5 +397,19 @@ footer ul{
     }
     .mapa-center{
         padding-left: 4.375rem;
+    }
+    footer{
+
+    }
+}
+@media (max-width:442px){
+    .formulario legend{
+        font-size: 0.8rem;
+    }
+    .campo{
+        width: 80%;
+    }
+    footer ul li p{
+        visibility: hidden;
     }
 }

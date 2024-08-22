@@ -1,445 +1,355 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Krub:wght@400;700&family=Sankofa+Display&display=swap');
-
-*{
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 0px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.795);
-}
-.navbar{
-    display: flex;
-    gap: 1.25rem;
-    padding-right: 1.25rem;
-    list-style-type: none;
-}
-.navbar a{
-    font-size: 1.25rem;
-    padding: 1.875rem;
-    color: aliceblue;
-    text-decoration: none;
-}
-.logo{
-    margin: 0 40px;
-}
-.logo img{
-    width: 2.5rem;
-}
-.section-principal{
-    width: 100%;
-    height: 25.4375rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../assets/img/1er\ portada.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-h1{
-    font-size: 3.75rem;
-    font-family: "Irish Grover";
-}
-button{
-        padding: 20px 30px;
-        border-top: 3px solid blue;
-        margin: 30px 20px;
-        border-radius: 20px; 
-        box-shadow: 5px 5px 10px black;
-        display: block;
-        background-color: black;
-}
-button a{
-    text-decoration: none;
-    color: aliceblue;
-}
-.section2{
-    width: 100%;
-    height: 25.4375rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../assets/img/paracaidas.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Krub:wght@400;700&family=Sankofa+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-.container-card{
-    width: 21.875rem;
-    height: 25rem;
-    border-radius: 0.3125rem;
-    text-align: center;
-    box-shadow: 5px 5px 10px black;
-    position: relative;
-    font-size: 1.5625rem;
-}
-.container-card .producto-img{
-    width: 100%;
-    height: 70%;
-}
-.container-card .producto-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain; 
-}
-.container-pag1{
-    display: flex;
-    width: 100%;
-    height: 43.75rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
-    background-image: url("../assets/img/port11.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.container-products{
-    display: flex;
-    width: 100%;
-    height: 43.75rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
-    background-image: url("../assets/img/portada3.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.card1{
-    background-color: lightblue;
-    order: 1;
-}
-.card2{
-    background-color: lightblue;
-    order: 2;
-}
-section{
-    position: relative;
-}
-.container-products .titulo2{
-    position: absolute;
-    bottom: 0;
-    font-size: 4.375rem;
-    font-family: "Irish Grover";
-}
-footer{
-    display: grid;
-    width: 100%;
-    height: 21vh;
-    background-color: rgb(107, 186, 231);
-}
-footer ul{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-rows: repeat(2,50%);
-    grid-template-columns: repeat(3,33.33%);
-}
-.li1{
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-.li2{
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-.li3{
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-.li4{
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-.li5{
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-.mapa{
-    display: flex;
-    flex-direction: row;
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 
-.text-mapa{
-    margin: 1.875rem;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.25rem;
-    width: 21.875rem;
-    height: 160px;
-    border-radius: 0.3125rem;
-    text-align: center;
-    box-shadow: 5px 5px 10px black;
-    position: relative;
+.navbar {
+  display: flex;
+  gap: 1.25rem;
+  padding-right: 1.25rem;
+  list-style-type: none;
+}
+.navbar a {
+  font-size: 30px;
+  padding: 1.875rem;
+  color: black;
+  text-decoration: none;
+}
+.navbar li:hover {
+  background-color: rgb(40, 250, 40);
+  transform: scale(1.2);
 }
 
-.formulario{
-    font-family: "Krub", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: gray;
-    width: min(60rem, 100%);      
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 1rem ;
+.logo {
+  margin: 0 40px;
+}
+.logo img {
+  width: 2.5rem;
 }
 
-.formulario fieldset{
-    border: none;
+.section-principal {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/img/paracaidas.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-.formulario legend{
-    text-align: center;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    color: yellow;
+span {
+  color: rgb(40, 250, 40);
 }
 
-.curso-formulario{
-    width: 70%;
-    height: 12.5rem;
+.section-principal h1 {
+  position: absolute;
+  top: 1px;
+  font-size: 6.25rem;
+  font-family: "Irish Grover";
 }
-.container-pag1{
-    display: flex;
-    flex-direction: row;
+.section-principal .bcur {
+  margin-bottom: 300px;
 }
-.curso{
-    margin: 1.875rem;
-    display: flex;
-    flex-direction: column;
-    font-size: 30px;
-    width: 21.875rem;
-    height: 18.75rem;
-    border-radius: 0.3125rem;
-    text-align: center;
-    box-shadow: 5px 5px 10px black;
-    position: relative;
+.section-principal h2 {
+  font-size: 35px;
+  color: black;
 }
-.elegir-mod{
-    margin: 1.875rem;
-    display: flex;
-    flex-direction: column;
-    font-size: 30px;
-    width: 21.875rem;
-    height: 37.5rem;
-    border-radius: 0.3125rem;
-    text-align: center;
-    box-shadow: 5px 5px 10px black;
-    position: relative;
-}
-.modalidad1{
-    display: flex;
-    width: 100%;
-    height: 43.75rem;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
-    background-image: url("../assets/img/port11.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.modalidad11{
-    display: flex;
-    flex-direction: row;
-    gap: 1.25rem;
-}
-.modalidad2{
-    display: flex;
-    width: 100%;
-    height: 43.75rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
-    background-image: url("../assets/img/portada3.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.tandem{
-    width: 21.875rem;
-    height: 25rem;
-    border-radius: 0.3125rem;
-    text-align: center;
-    box-shadow: 5px 5px 10px black;
-    position: relative;
-    font-size: 1.5625rem;
-}
-.estilo-libre{
-    width: 21.875rem;
-    height: 25rem;
-    border-radius: 0.3125rem;
-    text-align: center;
-    box-shadow: 5px 5px 10px black;
-    position: relative;
-    font-size: 1.5625rem;
-}
-.fcl{
-    width: 21.875rem;
-    height: 25rem;
-    border-radius: 0.3125rem;
-    text-align: center;
-    box-shadow: 5px 5px 10px black;
-    position: relative;
-    font-size: 1.5625rem;
-}
-.freefly{
-    width: 21.875rem;
-    height: 25rem;
-    border-radius: 0.3125rem;
-    text-align: center;
-    box-shadow: 5px 5px 10px black;
-    position: relative;
-    font-size: 1.5625rem;
-}
-.pda{
-    width: 21.875rem;
-    height: 25rem;
-    border-radius: 0.3125rem;
-    text-align: center;
-    box-shadow: 5px 5px 10px black;
-    position: relative;
-    font-size: 1.5625rem;
-}
-.trv{
-    width: 21.875rem;
-    height: 25rem;
-    border-radius: 0.3125rem;
-    text-align: center;
-    box-shadow: 5px 5px 10px black;
-    position: relative;
-    font-size: 1.5625rem;
-}
-.skysurf{
-    width: 21.875rem;
-    height: 25rem;
-    border-radius: 0.3125rem;
-    text-align: center;
-    box-shadow: 5px 5px 10px black;
-    position: relative;
-    font-size: 1.5625rem;
-}
-.big-ways{
-    width: 21.875rem;
-    height: 25rem;
-    border-radius: 0.3125rem;
-    text-align: center;
-    box-shadow: 5px 5px 10px black;
-    position: relative;
-    font-size: 1.5625rem;
-}
-@media (max-width:1200px){
-    .container-pag1{
-        height: auto;
-    }
-    .mapa{
-        align-items: center;
-        flex-direction: column;
-    }
-    .mapa-center{
-        width: 100%;
-    }
-    .text-mapa{
-        width: 80%;
-        font-size: 1.2rem;
-        height: auto;
-    }
-}
-@media (max-width:815px){
-    header{
-        flex-direction: row;
-        align-items: center;
-        justify-content: none;
-        padding: 10px 0;
-    }
-    .titulo2{
-        visibility: hidden;
-    }
-    .section-principal{
-        text-align: center;
-    }
-    .navbar{
-        flex-direction: column;
-        gap: 0.0625rem;
-        padding-right: 0.8rem;
-    }
-    .navbar a{
-        font-size: 1rem;
-        padding: 0.2rem;
-    }
-    .container-card{
-        width: 16rem;
-        height: 20rem;
-    }
-    .container-pag1 h1{
-        font-size: 1.9rem;
-    }
-    .container-pag1 h2{
-        font-size: 1.2rem;
-    }
-    .container-pag1{
-        align-items: center;
-    }
-    .formulario{
-        width: 80%;
-    }
-    .formulario legend{
-        font-size: 1.5rem;
-    }
-    .text-mapa{
-        height: auto;
-        font-size: 1rem;
-    }
-    .mapa{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-    .mapa img{
-        width: 80%;
-    }
-    .mapa-center{
-        padding-left: 4.375rem;
-    }
-    footer{
 
-    }
+button {
+  padding: 20px 30px;
+  margin: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px black;
+  display: block;
+  background-color: rgb(40, 250, 40);
 }
-@media (max-width:442px){
-    .formulario legend{
-        font-size: 0.8rem;
-    }
-    .campo{
-        width: 80%;
-    }
-    .text-mapa{
-        height: auto;
-        font-size: 0.7rem;
-    }
-    footer ul li p{
-        visibility: hidden;
-    }
+
+.bcur:hover,
+.bt2:hover {
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
+
+.section-principal .bt2 {
+  background-color: rgb(40, 250, 40);
+}
+.section-principal .bt2 a {
+  color: black;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+.card1 {
+  background-color: lightblue;
+  order: 1;
+}
+
+.card2 {
+  background-color: lightblue;
+  order: 2;
+}
+
+section {
+  position: relative;
+}
+
+.curso-formulario {
+  width: 70%;
+  height: 12.5rem;
+}
+
+.curso {
+  margin: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  width: 21.875rem;
+  height: 18.75rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+  box-shadow: 5px 5px 10px black;
+  position: relative;
+}
+
+.elegir-mod {
+  margin: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  width: 21.875rem;
+  height: 37.5rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+  box-shadow: 5px 5px 10px black;
+  position: relative;
+}
+.elegir-mod ul li {
+  list-style: none;
+}
+
+.formulario {
+  font-family: "Krub", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: gray;
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 6.25rem;
+}
+.formulario fieldset {
+  border: none;
+}
+.formulario legend {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: yellow;
+}
+
+.modalidad1 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  background-image: url("../assets/img/port11.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modalidad11 {
+  display: flex;
+  width: 100%;
+  height: 43.75rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.modalidad2 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  background-image: url("../assets/img/portada3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tandem,
+.estilo-libre,
+.fcl,
+.freefly,
+.pda,
+.trv,
+.skysurf,
+.big-ways {
+  width: 21.875rem;
+  height: 25rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+  box-shadow: 5px 5px 10px black;
+  position: relative;
+  font-size: 1.5625rem;
+}
+
+footer {
+  display: grid;
+  width: 100%;
+  height: 21vh;
+  background-color: rgb(146, 207, 223);
+}
+footer ul {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: repeat(2, 50%);
+  grid-template-columns: repeat(3, 33.33%);
+  list-style: none;
+  padding: 10px;
+}
+
+.li1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.li2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.li3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.li4 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.li5 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.container-card {
+  width: 21.875rem;
+  height: 25rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+  box-shadow: 5px 5px 10px black;
+  position: relative;
+  font-size: 1.5625rem;
+}
+.container-card .producto-img {
+  width: 100%;
+  height: 70%;
+}
+.container-card .producto-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.container-pag1 {
+  display: flex;
+  width: 100%;
+  height: 43.75rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  background-image: url("../assets/img/port11.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pag1-h1 {
+  background-color: rgba(95, 251, 241, 0.3568627451);
+}
+.pag1-h1 h1 {
+  font-size: 30px;
+}
+.pag1-h1 p {
+  font-size: 20px;
+}
+
+.h1contacto {
+  font-size: 30px;
+}
+
+.container-products {
+  display: flex;
+  width: 100%;
+  height: 43.75rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  background-image: url("../assets/img/portada3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-mapa {
+  margin: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  width: 21.875rem;
+  height: 160px;
+  border-radius: 0.3125rem;
+  text-align: center;
+  box-shadow: 5px 5px 10px black;
+  position: relative;
+}
+
+.mapa {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

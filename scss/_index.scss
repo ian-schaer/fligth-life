@@ -1,0 +1,76 @@
+.section-principal {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/img/paracaidas.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+span {
+    color: rgb(40, 250, 40);
+}
+
+.section-principal {
+    h1 {
+        position: absolute;
+        top: 1px;
+        font-size: 6.25rem;
+        font-family: "Irish Grover";
+    }
+
+    .bcur {
+        margin-bottom: 300px;
+    }
+
+    h2 {
+        font-size: 35px;
+        color: black;
+    }
+}
+
+button {
+    padding: 20px 30px;
+    margin: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    display: block;
+    background-color: rgb(40, 250, 40);
+}
+
+.bcur:hover,
+.bt2:hover {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.section-principal .bt2 {
+    background-color: rgb(40, 250, 40);
+
+    a {
+        color: black;
+    }
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+.card1 {
+    background-color: lightblue;
+    order: 1;
+}
+
+.card2 {
+    background-color: lightblue;
+    order: 2;
+}
+
+section {
+    position: relative;
+}

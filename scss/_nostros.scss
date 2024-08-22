@@ -1,0 +1,87 @@
+.container-card {
+    width: 21.875rem;
+    height: 25rem;
+    border-radius: 0.3125rem;
+    text-align: center;
+    box-shadow: 5px 5px 10px black;
+    position: relative;
+    font-size: 1.5625rem;
+
+    .producto-img {
+        width: 100%;
+        height: 70%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.container-pag1 {
+    display: flex;
+    width: 100%;
+    height: 43.75rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    background-image: url("../assets/img/port11.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pag1-h1 {
+    background-color: #5ffbf15b;
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.h1contacto {
+    font-size: 30px;
+}
+
+.container-products {
+    display: flex;
+    width: 100%;
+    height: 43.75rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    background-image: url("../assets/img/portada3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-mapa {
+    margin: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    width: 21.875rem;
+    height: 160px;
+    border-radius: 0.3125rem;
+    text-align: center;
+    box-shadow: 5px 5px 10px black;
+    position: relative;
+}
+
+.mapa {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
